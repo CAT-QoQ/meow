@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-background: #131415;
+    --dark-foreground: #1f2124;
+    --dark-embossment: #282a2d;
+    --dark-accent-colour: #ffd37d;
+    --dark-text-color: #FFFFFF;
+    --dark-text-weak-color: #a5a6a7;
+
+    --light-background: #f2f4f6;
+    --light-foreground: #FFFFFF;
+    --light-embossment: #f2f4f6;
+    --light-accent-colour: #f42a60;
+    --light-text-color: #1f1f1f;
+    --light-text-weak-color: #888888;
+
+    background-color: var(--light-background);
+}
+
+html.dark {
+    background-color: var(--dark-background);
+    scrollbar-color: var(--dark-foreground) var(--dark-embossment);
+}
+
+/* Webkit (Chrome, Edge, Safari) 支持 */
+/*.dark ::-webkit-scrollbar {*/
+/*    width: unset;*/
+/*}*/
+/*.dark ::-webkit-scrollbar-thumb {*/
+/*    background-color: var(--dark-embossment);*/
+/*    border-radius: 12px;*/
+/*}*/
+/*.dark ::-webkit-scrollbar-track {*/
+/*    !*margin-top: 2px;*!*/
+/*    !*margin-bottom: 4px;*!*/
+/*    border-radius: 12px;*/
+/*    !*background-color: var(--dark-foreground);*!*/
+/*}*/
